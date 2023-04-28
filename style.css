@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+/* dark mode */
+.dark-theme{
+    --bg-color: rgb(48, 48, 48);
+    --color: white;
+}
+#sun.dark-theme{
+    top: 0px;
+    opacity: 1;
+}
+#moon.dark-theme{
+    /* background: #000; */
+    transform: translateY(30px);
+}
+#mode-dark.dark-theme{
+    background: #000;
+}
+.cek.dark-theme{
+    background: #000;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--color);
+}
+.container{
+    position: relative;
+    width: 600px;
+    height: 100vh;
+    overflow: hidden;
+    margin: auto;
+}
+.container nav{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.container nav .info{
+    position: relative;
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+}
+a,p{
+    color: var(--color);
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+p{
+    position: relative;
+    top: 20px;
+}
+.container nav .mode-dark{
+    position: absolute;
+    right: 10px;
+    width: 30px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    overflow: hidden;
+    background: rgb(238, 238, 238);
+}
+.mode-dark .icon-sun{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    color: black;
+    margin: auto;
+    top: 20px;
+    transition: 0.5s;
+    opacity: 0;
+}
+.mode-dark .icon-moon{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    font-size: 23px;
+    color: black;
+    margin: auto;
+    top: 0px;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.container header{
+    position: relative;
+    margin-top: 60px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Sigmar', cursive;
+}
+.container .section{
+    position: relative;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .section .form-input{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    width: 300px;
+    text-align: center;
+}
+.form-input input{
+    width: 280px;
+    height: 35px;
+    background: white;
+    border: 3px solid black;
+    box-shadow: 4px 4px black;
+    margin-top: 20px;
+    outline: none;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    padding: 0px 5px;
+}
+.form-input button{
+    margin-top: 20px;
+    width: 200px;
+    height: 30px;
+    background: white;
+    border: 3px solid rgb(131, 131, 131);
+    box-shadow: 5px 5px rgb(97, 96, 96);
+    margin-left: 80px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+.form-input button:hover{
+    background: rgb(165, 165, 165);
+    color: black;
+    font-weight: bold;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .sosmed{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+}
+footer .sosmed li{
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 4px 6px black;
+    margin: 10px;
+}
+
+@media screen and (min-width: 360px) {
+    .container{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+}
